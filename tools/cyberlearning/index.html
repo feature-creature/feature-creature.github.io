@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Luke Demarest</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="Shortcut Icon" href="">
+
+    <meta name="robots" content="index,follow,noodp">
+    <meta name="googlebot" content="index,follow">
+    <meta name="google" content="nositelinkssearchbox">
+
+    <meta name="description" content="Luke Demarest is a visual artist with a background in sculpture and software.">
+    <meta name="abstract" content="Luke Demarest is a visual artist with a background in sculpture and software.">
+    <meta name="summary" content="Luke Demarest is a visual artist with a background in sculpture and software.">
+    <meta name="subject" content="Luke Demarest">
+    <meta name="topic" content="Luke Demarest">
+
+    <meta name="coverage" content="Worldwide">
+    <meta name="referrer" content="never">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/flexboxgrid.min.css">
+    <style>
+      html{
+        border-top: 5px solid orange;    
+      }
+      body{
+        color: gray;    
+        font-family: helvetica;
+        max-width: 30em;
+      }
+      a{
+        color: orange;    
+        text-decoration: none;
+      }
+      button{
+        background-color: orange;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+      #introduction{
+        color: black;
+      }
+    </style>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body>
+    <main>
+
+      <section id="introduction">
+        <h1>CyberLearning </h1>
+        <p>
+        CyberLearning is a dynamic process of internal <i>dialoguing</i>. 
+        Based on the Socratic Method, it uses questions as a means of discovering knowlede and building understanding. 
+        </p>
+        <p>
+        Use a firm chair, a hard, flat surface for sketching, loose unlined paper, a pencil, and water.
+        </p>
+        <p>
+        Always start a session of Socratic cycles by reviewing the Starting Principles.
+        </p>
+      </section>
+
+      <section id="initialize">
+        <h2 class="starting">Starting Principles (SP)</h2> 
+        <ol>
+          <li> Nobody can teach you as well as you can teach yourself.</li>
+          <li>Merely listening to your lecturers and completing their assignments is never enough.</li>
+          <li>Not everything you are assigned to read or asked to do is equally important.</li>
+          <li>Grades are just subjective opinions. Grading is far from an exact science.</li>
+          <li>Making mistakes (and occasionally appearing foolish) is the price you pay for learning and improving.</li>
+          <li>The point of a question is to get you to think-not simply to answer it.</li>
+          <li>You're in school to learn to think for yourself, not to repeat what your textbooks and lecturers tell you.</li>
+          <li>Subjects do not always seem interesting or relevant, but being actively engaged in learning them is better than being passively bored and not learning them.</li>
+          <li>Few things are as potentially difficult, frustrating, or frightening as genuine learning, yet nothing is so rewarding and empowering.</li>
+          <li>How well you do in school reflects your attitude and your method, not your ability.</li>
+          <li>If you're doing it for the grades or the approval of others, you're missing the satisfaction of the process and putting your self-esteem at the mercy of things outside your control.</li>
+          <li>School is a game, but it's a very important game.</li>
+        </ol>
+      </section>
+
+      <section id="cycle">
+        <h2 class="interval">Socratic Cycle: <span>30:00</span>  <i style="color:lightgray">/  30:00</i></h2> 
+
+        <button id="go">start</button>
+        <button id="clear" class="hide">reset</button>
+
+        <p>
+        You will learn to ask these questions in an infinite loop. You won't be able to answer all of the questions every time, but the important thing is that you make the effort to always ask them.
+        </p>
+        <ol>
+          <div id="one" class="one subsection">
+            <span>1:00</span>   
+            <i style="color:gray;">/  1:00</i>
+            <p>
+            Before reading anything, answer in your head:
+            </p>
+            <li>
+              <b>What is my specific purpose for reading this?</b>
+              Scanning for general ideas?<br>
+              Searching for specific information?<br>
+              Researching for a paper?<br>
+              Preparing for a crit? (SP.3)
+            </li>
+          </div>
+
+          <div id="two" class="two subsection">
+            <span>2:00</span>  
+            <i style="color:gray;">/  2:00</i>
+            <br />
+            After reading the main title, answer on scratch paper:
+            <li>
+              <b>What do I already know about this topic?</b>
+              Warm up by jotting down what I already know, what this reminds me of, and what I'd like to or expect to learn from this material. 
+              This process reveals gaps to fill in your current knowledge.
+            </li>
+          </div>
+
+          <div id="three" class="three subsection">
+            <span>3:00</span>  
+            <i style="color:gray">/  3:00</i>
+            <br />
+            After quickly skimming the material, answer on notes paper:
+            <li>
+              <b>What's the big picture here?</b> 
+              Skimming a book: preface/introduction, author bio/publisher page, table of contents, chapter summaries. 
+              Skimming a chapter: title, section and subsection headings, first and last paragraphs, first and last sentence of each paragraph. 
+              Write one paragraph of overall theme and quickly make an outline of the main points/terms.
+            </li>
+          </div>
+
+          <div class="four subsection">
+            <span>15:00</span>  
+            <i style="color:gray">/  15:00</i>
+            <br />
+            While reading sentence by sentence, answer on notes paper:
+            <li>
+              <b>What's the author going to say next?</b>
+              try to stay one step ahead of the author and anticipate what they will say next.
+            </li>
+            <li>
+              <b>Expert questions for computational art:</b>
+              <ul>
+                <li>How can I rephrase this question for increased tangebility?</li>
+                <li>What is the start/what is the finish?</li>
+                <li>What are the essential steps?</li>
+                <li>What are the patterns?</li>
+                <li>What happens at the extremes?</li>
+                <li>What are the edge cases?</li>
+                <li>If this changes, what else will change?</li>
+                <li>How many different ways can I solve this problem?</li>
+              </ul>
+            </li>
+<li><b>What questions does this raise for me?</b></li>
+
+And think about:
+
+<li><b>What information is important enough to include in your notes?</b> What's important will depend on your purpose (question 1).</li>
+<li><b>How can I paraphrase and summarize this information?</b>
+you should translate the authors words into your own, using as few as you can.</li>
+<li><b>How can I organize this information?</b></li>
+</div>
+<br />
+<div class="five subsection">
+<span>4:00</span>  <i style="color:gray">/  4:00</i><br />After you've finished taking notes, put away the material and answer with your notes only:
+<li><b>How can I picture this information?</b> Can I create any new graphical groupings or linkings. Translate as much of the information into symbols and pictures as possible.</li>
+<li><b>How does this information fit in with what I already know?</b>How does this fit in with the broader topic and other topics as well.</li>
+<li><b>What's my hook for remembering this information?</b>What types of learning would best map this material to your brain.</li>
+</div>
+<br />
+<div class="six subsection">
+<span>5:00</span>  <i style="color:gray">/  5:00</i><br />
+Take a 5 minute break before the next cycle. You will most likely loose your flow if the break lasts longer than 5 minutes. Limit to maximum of 3 cycles in a row of any single subject. 
+</div>
+</ol>
+</section>
+
+<section>
+<h2>How Do I Get Unstuck?</h2>
+
+    <ol>
+        <li>Look up unknown or misleading terminology.</li>
+        <li>Return to your big picture to ground yourself in the main concepts.</li>
+        <li>Jump to the conclusion or summary of the material to realign with the big picture.</li>
+        <li>Find another source of information from a different point of view.</li>
+        <li>Find a tangable example if the concept is abstract.</li>
+        <li>Retrace your steps to reveal what you do know and what you do not know.</li>
+        <li>Sleep on it. Review the problem one last time before lights out. Immediately write out early morning insights.</li>
+        <li>Teach someone who knows less about the topic. This forces you to stick to essential points.</li>
+        <li>Ask for a hint (not an explanation) after working things out on your own first. <a href="http://www.catb.org/esr/faqs/smart-questions.html" target="_blank">How To Ask Questions The Smart Way</a></li>
+        <li>If you are still stuck don't spend any more time on the problem today - you don't have all the pieces of the puzzle. Return to whats confusing after a day of working on other topics and updating your summary study notes.</li>
+    </ol>
+</section>
+  </main>
+
+  <audio id="bell">
+      <source src="hand_bells-a.mp3" type="audio/mp3">
+  </audio>
+  <audio id="bell-finish">
+      <source src="wind_chime-tolling_A.mp3" type="audio/mp3">
+  </audio>
+  <audio id="bell-finish-break">
+      <source src="wind_chime-gamelan_gong_A.mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+  var audio = document.getElementById("bell");
+  var audioFinish = document.getElementById("bell-finish");
+  var audioFinishBreak = document.getElementById("bell-finish-break");
+
+  var section2 = false;
+  var section3 = false;
+  var section4 = false;
+  var section5 = false;
+  var section5 = false;
+  var section6 = false;
+
+  var t;
+
+  d3.select("#go").on("click", function(){
+      audio.play();
+      audioFinish.play();
+      t = d3.interval(function(elapsed) {
+          d3.select(".interval span").text(millisToMAndS(1800000 - elapsed));    
+          if(elapsed < 1 * 60000){
+              d3.selectAll(".subsection").style("color","gray");
+              d3.select(".one").style("color","black");
+              d3.select(".one span").text(millisToMAndS(60000 - elapsed));    
+          }
+          else if(elapsed < 3 * 60000){
+              if(section2 == false){
+                  audio.play();
+                  section2 = true;
+              }
+              d3.selectAll(".subsection").style("color","gray");
+              d3.select(".two").style("color","black");
+              d3.select(".two span").text(millisToMAndS((3*60000) - elapsed));    
+          }
+          else if(elapsed < 6 * 60000){
+              if(section3 == false){
+                  audio.play();
+                  section3 = true;
+              }
+              d3.selectAll(".subsection").style("color","gray");
+              d3.select(".three").style("color","black");
+              d3.select(".three span").text(millisToMAndS((6*60000) - elapsed));    
+          }
+          else if(elapsed < 21 * 60000){
+              if(section4 == false){
+                  audio.play();
+                  section4 = true;
+              }
+              d3.selectAll(".subsection").style("color","gray");
+              d3.select(".four").style("color","black");
+              d3.select(".four span").text(millisToMAndS((21 * 60000) - elapsed));    
+          }
+          else if(elapsed < 25 * 60000){
+              if(section5 == false){
+                  audio.play();
+                  section5 = true;
+              }
+              d3.selectAll(".subsection").style("color","gray");
+              d3.select(".five").style("color","black");
+              d3.select(".five span").text(millisToMAndS((25 * 60000) - elapsed));    
+          }
+          else if(elapsed < 30 * 60000){
+              if(section6 == false){
+                  audio.play();
+                  audioFinish.play();
+                  section6 = true;
+              }
+              d3.selectAll(".subsection").style("color","gray");
+              d3.select(".six").style("color","black");
+              d3.select(".six span").text(millisToMAndS((30 * 60000) - elapsed));    
+          }
+          else if (elapsed < 34.8 * 60000){
+                  audio.play();
+                  audioFinishBreak.play();
+          }
+          else if (elapsed < 35 * 60000){
+              window.location.reload(false);
+              t.stop();
+          }
+      });
+      d3.selectAll(".intervals").attr("class","hide");        
+      d3.select("#go").attr("class","hide"); 
+      d3.select("#clear").style("display","inline-block"); 
+  });
+
+  d3.select("#clear").on("click",function(){
+      //t.stop();
+   window.location.reload(false);
+  });
+
+  function millisToMAndS(millis) {
+      var minutes = Math.floor(millis / 60000);
+      var seconds = ((millis % 60000) / 1000).toFixed(0);
+      return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
+  }
+  </script>
+
+<style>
+.hide{
+    display:none;    
+}
+</style>
+  </body>
+</html>
