@@ -20,16 +20,26 @@
     <meta name="referrer" content="never">
     <meta name="format-detection" content="telephone=no">
 
-    <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../../css/flexboxgrid.min.css">
-    <style>
+    <link type="text/css" rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" rel="stylesheet" type="text/css" href="../../css/flexboxgrid.min.css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79452606-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <style type="text/css">
       html{
         border-top: 5px solid orange;    
       }
       body{
         color: gray;    
         font-family: helvetica;
-        max-width: 30em;
       }
       a{
         color: orange;    
@@ -48,6 +58,20 @@
       #introduction{
         color: black;
       }
+
+      @media screen and (min-device-width: 900px) {
+        main{
+          max-width: 30em;
+        }
+
+        html header nav a {
+          display:inline-block;
+          border-radius: 290486px;
+          font-size: 1.25em;
+        }
+
+      }
+
     </style>
     <script src="https://d3js.org/d3.v5.min.js"></script>
   </head>
@@ -57,8 +81,8 @@
       <section id="introduction">
         <h1>CyberLearning </h1>
         <p>
-        CyberLearning is a dynamic process of internal <i>dialoguing</i>. 
-        Based on the Socratic Method, it uses questions as a means of discovering knowlede and building understanding. 
+        CyberLearning is a learning tool for individuals.  
+        Based on the Socratic Method, it dynamic process of internal <i>dialoguing</i>.
         </p>
         <p>
         Use a firm chair, a hard, flat surface for sketching, loose unlined paper, a pencil, and water.
@@ -96,55 +120,89 @@
         You will learn to ask these questions in an infinite loop. You won't be able to answer all of the questions every time, but the important thing is that you make the effort to always ask them.
         </p>
         <ol>
+          <hr>
+          <hr>
+          <hr>
           <div id="one" class="one subsection">
-            <span>1:00</span>   
-            <i style="color:gray;">/  1:00</i>
             <p>
-            Before reading anything, answer in your head:
+            <span>1:00</span>   
+              <i style="color:gray;">/  1:00</i>
+              Before reading anything, answer in your head:
             </p>
             <li>
-              <b>What is my specific purpose for reading this?</b>
-              Scanning for general ideas?<br>
+              <b>What is my specific purpose for reading this material?</b> (SP.3)<br>
               Searching for specific information?<br>
+              Scanning for general ideas?<br>
               Researching for a paper?<br>
-              Preparing for a crit? (SP.3)
+              Preparing for a crit? 
             </li>
           </div>
-
+          <hr>
+          <hr>
+          <hr>
           <div id="two" class="two subsection">
-            <span>2:00</span>  
-            <i style="color:gray;">/  2:00</i>
-            <br />
-            After reading the main title, answer on scratch paper:
+            <p>
+              <span>2:00</span>  
+              <i style="color:gray;">/  2:00</i>
+              Read <i>only</i> the title, answer on scratch paper:</br>
+            </p>
             <li>
-              <b>What do I already know about this topic?</b>
-              Warm up by jotting down what I already know, what this reminds me of, and what I'd like to or expect to learn from this material. 
-              This process reveals gaps to fill in your current knowledge.
+              <b>What do I already know about this topic?</b></br>
+              what does this topic reminds me of?</br>
+              what would I like or expect to learn from this material?</br> 
+              This process reveals gaps in your current knowledge to eventually fill.
             </li>
           </div>
+          <hr>
+          <hr>
+          <hr>
 
           <div id="three" class="three subsection">
-            <span>3:00</span>  
-            <i style="color:gray">/  3:00</i>
-            <br />
-            After quickly skimming the material, answer on notes paper:
+            <p>
+              <span>3:00</span>  
+              <i style="color:gray">/  3:00</i>
+              After <i>quickly</i> skimming the material, answer on notes paper:
+            </p>
+            <p>
+              book: 
+                <ul>
+                  <li>author bio/publisher page</li>
+                  <li>table of contents</li>
+                  <li>preface &amp; introduction</li>
+                  <li>chapter summaries</li>
+                </ul>
+
+              chapter:
+                <ul>
+                  <li>section (and subsection) headings</li>
+                  <li>first and last paragraphs</li>
+                  <li>first and last sentence of each paragraph</li>
+                </ul>
+            </p>
             <li>
-              <b>What's the big picture here?</b> 
-              Skimming a book: preface/introduction, author bio/publisher page, table of contents, chapter summaries. 
-              Skimming a chapter: title, section and subsection headings, first and last paragraphs, first and last sentence of each paragraph. 
-              Write one paragraph of overall theme and quickly make an outline of the main points/terms.
+              <b>What's the big picture here?</b></br>
+              Draw a rough outline of the main points/terms.<br>
+              Write out a one paragraph rough summary of overall theme.
             </li>
           </div>
 
+          <hr>
+          <hr>
+          <hr>
           <div class="four subsection">
-            <span>15:00</span>  
-            <i style="color:gray">/  15:00</i>
-            <br />
-            While reading sentence by sentence, answer on notes paper:
+            <p>
+              <span>15:00</span>  
+              <i style="color:gray">/  15:00</i>
+              <i>While</i> reading sentence by sentence, answer on notes paper:
+            </p>
             <li>
               <b>What's the author going to say next?</b>
-              try to stay one step ahead of the author and anticipate what they will say next.
+              </br>
+              try to stay one step ahead of the author
+              </br>
+              anticipate to build intuition
             </li>
+            <li><b>What questions does this raise for me?</b></li>
             <li>
               <b>Expert questions for computational art:</b>
               <ul>
@@ -154,20 +212,26 @@
                 <li>What are the patterns?</li>
                 <li>What happens at the extremes?</li>
                 <li>What are the edge cases?</li>
-                <li>If this changes, what else will change?</li>
+                <li>If X changes, what else will change?</li>
                 <li>How many different ways can I solve this problem?</li>
               </ul>
             </li>
-<li><b>What questions does this raise for me?</b></li>
-
-And think about:
-
-<li><b>What information is important enough to include in your notes?</b> What's important will depend on your purpose (question 1).</li>
-<li><b>How can I paraphrase and summarize this information?</b>
-you should translate the authors words into your own, using as few as you can.</li>
-<li><b>How can I organize this information?</b></li>
-</div>
-<br />
+            <li>
+              <b>Is this information important enough to include in my notes?</b>
+              </br>
+              This depends on my purpose for reading this material. (question 1)
+            </li>
+            <li>
+              <b>How can I paraphrase and summarize this information?</b>
+              </br>
+              I should translate the authors words into my own, using as few as I can.</li>
+            <li>
+              <b>How can I organize this information?</b>
+            </li>
+          </div>
+          <hr>
+          <hr>
+          <hr>
 <div class="five subsection">
 <span>4:00</span>  <i style="color:gray">/  4:00</i><br />After you've finished taking notes, put away the material and answer with your notes only:
 <li><b>How can I picture this information?</b> Can I create any new graphical groupings or linkings. Translate as much of the information into symbols and pictures as possible.</li>
@@ -175,9 +239,12 @@ you should translate the authors words into your own, using as few as you can.</
 <li><b>What's my hook for remembering this information?</b>What types of learning would best map this material to your brain.</li>
 </div>
 <br />
-<div class="six subsection">
-<span>5:00</span>  <i style="color:gray">/  5:00</i><br />
-Take a 5 minute break before the next cycle. You will most likely loose your flow if the break lasts longer than 5 minutes. Limit to maximum of 3 cycles in a row of any single subject. 
+          <hr>
+          <hr>
+          <hr>
+  <div class="six subsection">
+  <span>5:00</span>  <i style="color:gray">/  5:00</i><br />
+  Take a 5 minute break before the next cycle. You will most likely loose your flow if the break lasts longer than 5 minutes. Limit to maximum of 3 cycles in a row of any single subject. 
 </div>
 </ol>
 </section>
